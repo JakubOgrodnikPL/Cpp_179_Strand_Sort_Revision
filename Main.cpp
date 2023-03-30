@@ -21,3 +21,15 @@ void strandSort(list<int> &ip, list<int> &op)
     op.merge(sublist);
     strandSort(ip, op);
 }
+
+int main(void)
+{
+    list<int> ip{11, 1, 20, 140, 22, 54, 91};
+    list<int> op;
+    strandSort(ip, op);
+    for (auto x : op)
+    {
+        cout << x << " ";
+    }
+    return 0;
+}
